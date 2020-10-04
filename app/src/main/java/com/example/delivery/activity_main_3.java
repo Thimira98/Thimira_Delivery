@@ -1,5 +1,6 @@
 package com.example.delivery;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -37,6 +38,17 @@ public class activity_main_3 extends activity_main_2 {
         order = new Order();
         dbRef= FirebaseDatabase.getInstance().getReference().child("Order");
 
+        butUpdate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dbRef = FirebaseDatabase.getInstance().getReference();
+                dbRef.child("Order").child("Ord1").child("name").setValue(etName.getText().toString().trim());
+                dbRef.child("Order/Ord1/address").setValue(etAddress.getText().toString().trim());
+                Toast.makeText(getApplicationContext(), "Sucessfully updated", Toast.LENGTH_SHORT).show();
+                clearControls();
+            }
+        });
+
         butSaveCon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -51,13 +63,23 @@ public class activity_main_3 extends activity_main_2 {
 
                 dbRef.push().setValue(order);
                 Toast.makeText(activity_main_3.this, "Sucessfully Inserted", Toast.LENGTH_LONG).show();
-
-
-
             }
         });
 
 
+    }
 
+    private void openActivity_main_2() {
+        Intent intent = new Intent(this, activity_main_2.class);
+        startActivity(intent);
+
+    }
+
+    private void clearControls() {
+        etName.setText("");
+        etAddress.setText("");
+        etDistrict.setText("");
+        etPhone.setText("");
+        etEmailAddress.setText("");
     }
 }

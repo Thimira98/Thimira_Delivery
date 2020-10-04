@@ -184,4 +184,3 @@ public class activity_main_2 extends AppCompatActivity {
                 }*/
 
 }
-

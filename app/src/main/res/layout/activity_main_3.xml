@@ -23,7 +23,7 @@
         android:ems="10"
         android:hint="@string/hintName"
         android:inputType="textPersonName"
-        android:textColor="#919191" />
+        android:textColor="#090808" />
 
     <EditText
         android:id="@+id/etAddress"
