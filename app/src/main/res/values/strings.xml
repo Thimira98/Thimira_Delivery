@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Delivery</string>
+    <string name="lbname">Name</string>
+    <string name="Ibaddress">Address</string>
+    <string name="lbdistrict">District</string>
+    <string name="lbphone">Phone Number</string>
+    <string name="lbemail">Email</string>
+
+    <string name="Btnconfirm">Confirm</string>
+    <string name="lbTotal">Total Items Cost :</string>
+    <string name="lbcharges">Delivery Charges</string>
+    <string name="lbamount">Total Amount</string>
+    <string name="Btndelete">DElETE</string>
+
+    <string name="BtnConfirm">CONFIRM</string>
+
+    <string name="hintName">Name</string>
+    <string name="hintAddress">Address</string>
+    <string name="hintDistrict">District</string>
+    <string name="hintPhone">Phone Number</string>
+    <string name="hintEmail">Email</string>
+
+
+    <string name="UpdateB">UPDATE</string>
+    <string name="ConfirmB">CONFIRM</string>
+    <string name="SaveB">SAVE</string>
+    <string name="saveS">SAVE</string>
+    <string name="k">Head Phones</string>
+
+
+    <string name="Btncon">Confirm</string>
+    <string name="DeleteB">Delete</string>
+    <string name="btconfI">confirm</string>
+    <string name="lbsum">total</string>
+    <string name="BtnTotal">Total Item cost</string>
+    <string name="btnConfir">Confirm</string>
+    <string name="btnUpdate">Update</string>
+    <string name="btndelete">Delete</string>
+</resources>
